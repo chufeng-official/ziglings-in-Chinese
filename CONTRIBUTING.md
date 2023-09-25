@@ -1,82 +1,60 @@
-# Contributing
+# 贡献
 
-By reading this document, you have already entered the Elite Hall
-of Ziglings Maintenance!
+阅读本文档，即表示您已进入 Ziglings 维护的精英殿堂！
 
+## Ziglings 的受众
 
-## The Ziglings Audience
+Ziglings 适用于各种经验水平的程序员。无需掌握特定的语言知识。
+任何人只要能安装当前的 Zig 快照、设置一份 Ziglings 副本，
+并了解常用的语言构件（分支、循环和函数），就可以使用 Ziglings。
 
-Ziglings is intended for programmers of all experience levels. No
-specific language knowledge is expected. Anyone who can install
-the current Zig snapshot, setup a copy of Ziglings, and knows
-common language building blocks (if/then/else, loops, and
-functions) is ready for Ziglings.
+Ziglings 的目的是完全自成一体。
+如果您无法根据目前从 Ziglings 中收集到的信息解决某个练习，
+那么该练习可能还需要一些额外的工作。请提交一个 issue ！
 
-Ziglings is intended to be completely self-contained. If you
-can't solve an exercise from the information you've gleaned so
-far from Ziglings, then the exercise probably needs some
-additional work. Please file an issue!
+如果一个示例与描述不符或有不清楚的地方，请提交一个 issue ！
 
-If an example doesn't match a description or if something is
-unclear, please file an issue!
+## 拼写/语法
 
+如果你看到了任何错别字，请提交一个 issue ……或者发起一个 pull request ！
 
-## Spelling/Grammar
+错误不嫌小。Ziglings 必须是完美的。:-)
 
-If you see any typos, please file an issue...or make a pull
-request!
+## 创意
 
-No mistake is too small. The Ziglings must be perfect. :-)
+如果您有关于新课程或改进 Ziglings 的创意，请毫不犹豫地提交一个 issue。
 
+请随时提交新的练习，但请理解，
+如果我们认为这些练习因某种原因不合适，
+它们可能会被大量修改或完全拒绝。
 
-## Ideas
+## 平台和 Zig 版本
 
-If you have ideas for new lessons or a way Ziglings could be
-improved, don't hesitate to file an issue.
+由于它使用的是 Zig 构建系统，因此只要 Zig 能运行的地方，Ziglings 应该就能运行。
 
-Feel free to submit new exercises but please understand that they
-may be heavily edited or rejected entirely if we feel they don't
-fit for one reason or another.
+由于 Ziglings 是 Zig 语言学习资源，因此它可以从官方网站下载页面跟踪 Zig 当前的开发快照。
 
-## Platforms and Zig Versions
+如果您在 Ziglings 中遇到因 Zig 最新开发版本中的破坏性更改而导致的错误，
+这就是 Ziglings 中的一个新 bug。请提交一个 issue ……或发起 pull request！
 
-Because it uses the Zig build system, Ziglings should work
-wherever Zig does.
+## 格式化
 
-Since Ziglings is a Zig language learning resource, it tracks the
-current development snapshots of Zig from the official website
-downloads page.
+所有的练习都应该遵守 `zig fmt`。我经常忘记去做这件事。
 
-If you run into an error in Ziglings caused by breaking changes
-in the latest development build of Zig, that's a new bug in
-Ziglings. Please file an issue...or make a pull request!
+## Pull Request 工作流
 
+Ziglings 使用“标准的” Github 工作流作为向导通过 Web 接口，具体为：
 
-## Formatting
-
-All exercises should conform to `zig fmt`. I often forget to do
-this.
-
-
-## Pull Request Workflow
-
-Ziglings uses the "standard" Github workflow as guided by the Web
-interface.  Specifically:
-
-* Fork this repository
-* Create a branch from `main` for your work:
+* 派生这个仓库
+* 从 `main` 分支创建一个分支以支持你的工作：
       `git checkout -b my-branch`
-* Make changes, commit them
-* When your changes are ready for review, push your branch:
+* 进行修改，提交它们
+* 当你的修改准备好送交审核时，推送你的分支：
       `git push origin my-branch`
-* Create a pull request from your branch to `ziglings/main`
-* Your faithful Ziglings maintainers will take a look at your
-  request ASAP (we don't talk about May-July 2022, LOL)
-* Once the changes are reviewed, your request will be merged and
-  eternal Ziglings contributor glory is yours!
+* 从你的分支创建一个到  `ziglings/main` 分支的 pull request
+* 你忠实的 Ziglings 维护者将尽快查看你的请求（2022年5月到7月期间就不说了，哈哈）
+* 一旦更改通过审核，您的请求将被合并，永恒的 Ziglings 贡献者的荣耀将属于你！
 
+## 秘密
 
-## The Secrets
-
-If you want to peek at the secrets, take a look at the `patches/`
-directory.
+如果你想窥探其中的秘密，请查看 `patches/` 目录。

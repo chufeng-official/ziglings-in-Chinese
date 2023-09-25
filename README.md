@@ -1,101 +1,85 @@
 # Ziglings
 
-## ⚠️ Attention! Ziglings has moved to Codeberg!
+## ⚠️ 注意! Ziglings 已迁移至 Codeberg!
 
-Check out our handy new URL: https://ziglings.org
+查看我们方便的新 URL: https://ziglings.org
 
-Or visit the repo directly at: https://codeberg.org/ziglings/exercises
+或直接由此访问仓库: https://codeberg.org/ziglings/exercises
 
 ***
 
-Welcome to Ziglings! This project contains a series of tiny
-broken programs (and one nasty surprise).  By fixing them, you'll
-learn how to read and write [Zig](https://ziglang.org/) code.
+欢迎来到 Ziglings ！本项目包含一系列微小的破损程序（和一个险恶的惊喜）。
+通过修复它们，你将学会如何阅读和编写 [Zig](https://ziglang.org/) 代码。
 
 ![ziglings](https://user-images.githubusercontent.com/1458409/109398392-c1069500-790a-11eb-8ed4-7d7d74d32666.jpg)
 
-Those broken programs need your help! (You'll also save the
-planet from evil aliens and help some friendly elephants stick
-together, which is very sweet of you.)
+那些坏掉的程序需要你的帮助！（你还将从邪恶的外星人手中拯救地球，
+并帮助一些友好的大象团结在一起，你真是太贴心了）。
 
-This project was directly inspired by the brilliant and fun
-[rustlings](https://github.com/rust-lang/rustlings)
-project for the [Rust](https://www.rust-lang.org/) language.
-Indirect inspiration comes from [Ruby Koans](http://rubykoans.com/)
-and the Little LISPer/Little Schemer series of books.
+这个项目的直接灵感来自于 [Rust](https://www.rust-lang.org/) 语言的
+[rustlings](https://github.com/rust-lang/rustlings) 项目。
+间接灵感来自 [Ruby Koans](http://rubykoans.com/) 
+和 Little LISPer/Little Schemer 系列丛书。
 
-## Intended Audience
+## 目标受众
 
-This will probably be difficult if you've _never_ programmed
-before.  But no specific programming experience is required. And
-in particular, you are _not_ expected to have any prior
-experience with "systems programming" or a "systems" level
-language such as C.
+如果你以前*从未*做过编程，这可能会比较困难。但是特定的编程经验并不是必需的。
+尤其是，我们*不*希望你有任何“系统编程”或“系统”级语言（如 C 语言）方面的经验。
 
-Each exercise is self-contained and self-explained. However,
-you're encouraged to also check out these Zig language resources
-for more detail:
+每一项练习都是自成一体、自圆其说的。不过，我们鼓励你同时查看这些 Zig 语言资源。
+更多细节：
 
 * https://ziglang.org/learn/
 * https://ziglearn.org/
 * https://ziglang.org/documentation/master/
 
-Also, the [Zig community](https://github.com/ziglang/zig/wiki/Community)
-is incredibly friendly and helpful!
+此外，[Zig 社区](https://github.com/ziglang/zig/wiki/Community) 也非常友好和乐于助人！
 
-## Getting Started
+## 起步
 
-Install a [development build](https://ziglang.org/download/) of
-the Zig compiler.  (See the "master" section of the downloads
-page.)
+安装一个 Zig 编译器的 [development build](https://ziglang.org/download/)。
+（请参阅下载页面的“master”部分）。
 
-Verify the installation and build number of `zig` like so:
+像这样验证 `zig` 的安装和构建编号：
 
 ```
 $ zig version
 0.11.0-dev.4246+xxxxxxxxx
 ```
 
-Clone this repository with Git:
+用 Git 克隆这个仓库:
 
 ```
 $ git clone https://ziglings.org
 $ cd ziglings.org
 ```
 
-Then run `zig build` and follow the instructions to begin!
+然后运行 `zig build` 并按照说明开始操作！
 
 ```
 $ zig build
 ```
 
-Note: The output of Ziglings is the unaltered output from the Zig
-compiler. Part of the purpose of Ziglings is to acclimate you to
-reading these.
+注：Ziglings 的输出是 Zig 编译器未经修改的输出。
+Ziglings 的部分目的是让你适应阅读这些内容。
 
-## A Note About Versions
+## 关于版本的一个注意事项
 
-The Zig language is under very active development. In order to be
-current, Ziglings tracks **development** builds of the Zig
-compiler rather than versioned **release** builds. The last
-stable release was `0.10.1`, but Ziglings needs a dev build with
-pre-release version "0.11.0" and a build number at least as high
-as that shown in the example version check above.
+Zig 语言正在积极开发中。
+为了保证时效性，Ziglings 追踪的是 Zig 编译器的**开发**版本，
+而非版本控制的**发行**版本。上一个稳定版本是“0.10.1”，
+但 Ziglings 需要一个版本号为“0.11.0”的开发版本，
+且其版本号至少与上述版本检查示例中显示的版本号相同。
 
-It is likely that you'll download a build which is _greater_ than
-the minimum.
+你很可能会下载到比最小值*大*的版本。
 
-_(For those who cannot easily update Zig, there are also
-community-supported branches in this repo. At the moment, there's
-one for v0.8.1. Older version branches may or may not have all
-exercises and/or bugfixes.)_
+*（对于那些无法轻松更新 Zig 的用户，本仓库中也有社区支持的分支。
+目前有一个 v0.8.1 分支。旧版本分支可能有也可能没有所有的练习和/或错误修正。）*
 
-Once you have a build of the Zig compiler that works with
-Ziglings, they'll continue to work together. But keep in mind
-that if you update one, you may need to also update the other.
+一旦你有一个能与 Ziglings 一起工作的 Zig 编译器构建，它们将持续地协同工作。
+但请注意，如果你更新了其中一个，你可能也需要更新另一个。
 
-
-### Version Changes
+### 版本变动
 
 Version-0.11.0-dev.4246+71dfce31b
 * *2023-06-26* zig 0.11.0-dev.4246 - changes in compile step (now it can be null)
@@ -120,116 +104,109 @@ Version-0.11.0-dev.4246+71dfce31b
 * *2021-04-21* zig 0.8.0-dev.1983 - std.fmt.format() `any` format string required
 * *2021-02-12* zig 0.8.0-dev.1065 - std.fmt.format() `s` (string) format string required
 
-## Advanced Usage
+## 高级用法
 
-It can be handy to check just a single exercise:
+只检查一项练习也很方便：
 
 ```
 zig build -Dn=19
 ```
 
-You can also run without checking for correctness:
+你也可以不检查正确性而直接运行：
 
 ```
 zig build -Dn=19 test
 ```
 
-Or skip the build system entirely and interact directly with the
-compiler if you're into that sort of thing:
+或者完全跳过构建系统，直接与编译器交互，如果你喜欢做这种事的话：
 
 ```
 zig run exercises/001_hello.zig
 ```
 
-Calling all wizards: To prepare an executable for debugging,
-install it to zig-cache/bin with:
+召唤所有的巫师：想要为调试准备一个可执行文件，要通过以下命令将其安装到 zig-cache/bin 中：
 
 ```
 zig build -Dn=19 install
 ```
 
-To get a list of all possible options, run:
+想要获取一个所有可能的选项的列表，运行：
 
 ```
 zig build -Dn=19 -l
 
-  install          Install 019_functions2.zig to prefix path
-  uninstall        Uninstall 019_functions2.zig from prefix path
-  test             Run 019_functions2.zig without checking output
+  install          安装 019_functions2.zig 到前缀路径
+  uninstall        从前缀路径卸载 019_functions2.zig
+  test             运行 019_functions2.zig 而无需检查输出
   ...
 ```
 
-## What's Covered
+## 覆盖范围
 
-The primary goal for Ziglings is to cover the core Zig language.
+Ziglings 的主要目标是涵盖核心 Zig 语言。
 
-It would be nice to cover the Standard Library as well, but this
-is currently challenging because the stdlib is evolving even
-faster than the core language (and that's saying something!).
-Not only would stdlib coverage change very rapidly, some
-exercises might even cease to be relevant entirely.
+如果能将标准库也包括在内就更好了，但目前这还具有挑战性，
+因为 stdlib 的发展速度甚至比核心语言还要快（这还不算什么！）。
+不仅 stdlib 的覆盖范围会迅速变化，有些练习甚至可能完全不再相关。
 
-Having said that, there are some stdlib features that are
-probably here to stay or are so important to understand that they
-are worth the extra effort to keep current.
+尽管如此，仍有一些 stdlib 功能可能会继续存在，
+或者理解它们是如此重要，以至于它们值得额外的努力来保持最新趋势。
 
-Conspicuously absent from Ziglings are a lot of string
-manipulation exercises. This is because Zig itself largely avoids
-dealing with strings. Hopefully there will be an obvious way to
-address this in the future. The Ziglings crew loves strings!
+很明显，Ziglings 中没有大量的字符串操作练习。
+这是因为 Zig 本身在很大程度上避免处理字符串。
+希望将来能有明显的方法解决这个问题。
+Ziglings 团队热爱字符串！
 
-Zig Core Language
+Zig 核心语言
 
-* [x] Hello world (main needs to be public)
-* [x] Importing standard library
-* [x] Assignment
-* [x] Arrays
-* [x] Strings
-* [x] If
-* [x] While
-* [x] For
-* [x] Functions
-* [x] Errors (error/try/catch/if-else-err)
+* [x] Hello world (main 函数需要是 public 的)
+* [x] 导入标准库
+* [x] 赋值
+* [x] 数组
+* [x] 字符串
+* [x] If 分支
+* [x] While 循环
+* [x] For 循环
+* [x] 函数
+* [x] 错误 (error/try/catch/if-else-err)
 * [x] Defer (and errdefer)
-* [x] Switch
+* [x] Switch 分支
 * [x] Unreachable
-* [x] Enums
-* [x] Structs
-* [x] Pointers
-* [x] Optionals
-* [x] Struct methods
-* [x] Slices
-* [x] Many-item pointers
-* [x] Unions
-* [x] Numeric types (integers, floats)
-* [x] Labelled blocks and loops
-* [x] Loops as expressions
-* [x] Builtins
-* [x] Inline loops
-* [x] Comptime
-* [x] Sentinel termination
-* [x] Quoted identifiers @""
-* [x] Anonymous structs/tuples/lists
-* [ ] Async <--- ironically awaiting upstream Zig updates
-* [X] Interfaces
-* [X] Bit manipulation
-* [X] Working with C
+* [x] 枚举
+* [x] 结构体
+* [x] 指针
+* [x] 可选值
+* [x] 结构体方法
+* [x] 切片
+* [x] 多项指针
+* [x] 联合体
+* [x] 数值类型 (整数, 浮点数)
+* [x] 带标签的块和循环
+* [x] 循环表达式
+* [x] 内置函数
+* [x] 行内循环
+* [x] 编译期
+* [x] 末端标记
+* [x] 带引号的标识符 @""
+* [x] 匿名结构体/元组/列表
+* [ ] 异步 <--- 黑着脸等待上游 Zig 的更新
+* [X] 接口
+* [X] 位运算
+* [X] 与 C 语言一起工作
 
-Zig Standard Library
+Zig 标准库
 
-* [X] String formatting
-* [X] Testing
-* [X] Tokenization
+* [X] 字符串格式化
+* [X] 测试
+* [X] 分词
 
-## Contributing
+## 贡献
 
-Contributions are very welcome! I'm writing this to teach myself
-and to create the learning resource I wished for. There will be
-tons of room for improvement:
+贡献是非常受欢迎的！我写这个的目的是自学，
+并创建我所希望的学习资源。还有大量的改进空间：
 
-* Wording of explanations
-* Idiomatic usage of Zig
-* Additional exercises
+* 解释说明的措辞
+* Zig 的习惯用法
+* 额外的练习
 
-Please see [CONTRIBUTING](https://github.com/ratfactor/ziglings/blob/main/CONTRIBUTING.md)
-in this repo for the full details.
+请查阅本仓库中的 [CONTRIBUTING](https://github.com/ratfactor/ziglings/blob/main/CONTRIBUTING.md) 来获取完整的细节。
